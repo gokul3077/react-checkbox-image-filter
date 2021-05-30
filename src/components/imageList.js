@@ -5,6 +5,8 @@ import rightWindow from "../images/rightWindow.jpg";
 import leftWindow from "../images/leftWindow.jpg";
 import backWindow from "../images/backWindow.jpg";
 
+import "../styles/imageList.css";
+
 const imageListData = {
   front: {
     name: "Front Window",
@@ -35,41 +37,22 @@ const imageListData = {
 function ImageList({ filterList }) {
   const list = [...filterList];
   return (
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        flexGrow: 1,
-      }}
-    >
+    <div className="imageListContainer">
       {list?.length > 0 ? (
         list?.map((item) => (
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
+          <div className="imageContainer">
             <div>
-              {" "}
               <img
-                style={{
-                  height: "300px",
-                  margin: "10px",
-                  width: "300px",
-                  justifyContent: "center",
-                }}
+                className="imageStyle"
                 src={imageListData[item].image}
                 alt={item.name}
               />
             </div>
-            <div>{imageListData[item].name}</div>
+            <div className="title">{imageListData[item].name}</div>
           </div>
         ))
       ) : (
-        <div style={{ margin: "auto" }}>Please select any Windows</div>
+        <div className="message">Please select any window</div>
       )}
     </div>
   );

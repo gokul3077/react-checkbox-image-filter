@@ -1,0 +1,64 @@
+.imageListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  flex: 1 0 300px;
+  margin-top: 30px;
+  height: 100vh;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageStyle {
+  height: 300px;
+  margin: 10px;
+  width: 300px;
+  justify-content: center;
+}
+
+.message {
+  margin: 10% auto;
+  color: grey;
+  font-size: 22px;
+}
+
+.title {
+  color: #4f4f4f;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 850px) {
+  .imageListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 0 300px;
+  }
+
+  .message {
+    margin: 0;
+    color: grey;
+    font-size: 22px;
+  }
+}
+
+img {
+  /* padding: 50px; */
+  /* background-color: green; */
+  transition: transform 0.2s; /* Animation */
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+img:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

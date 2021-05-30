@@ -17,9 +17,14 @@ function App() {
     setFilterList(tempFilter);
   };
   return (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
-      <CheckboxFilter handleFilter={handleFilter} />
-      <ImageList filterList={filterList} />
+    <div>
+      <div className="header">
+        <div>Window Gallery</div>
+      </div>
+      <div className="mainContainer">
+        <CheckboxFilter handleFilter={handleFilter} />
+        <ImageList filterList={filterList} />
+      </div>
     </div>
   );
 }
