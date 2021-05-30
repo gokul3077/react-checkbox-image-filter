@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import ImageList from "./components/imageList";
+import CheckboxFilter from "./components/checkboxFilter";
 
 function App() {
+  const [filterArray, setFilterArray] = useState(new Set());
+  const handleFilter = (e) => {
+    console.log(e.target.name);
+    // const tempFilterArray = imageArray.map(
+    //   (item) => item.name == e.target.name
+    // );
+    const tempFilter = new Set(filterArray);
+
+    if (tempFilter.has(e.target.name)) {
+      tempFilter.delete(e.target.name);
+    } else {
+      tempFilter.add(e.target.name);
+    }
+    setFilterArray(tempFilter);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <CheckboxFilter handleFilter={handleFilter} />
+
+      <ImageList filterArray={filterArray} />
     </div>
   );
 }
