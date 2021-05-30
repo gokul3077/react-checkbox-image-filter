@@ -2,7 +2,7 @@
   "name": "react-filter-image",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gokul3077.github.io/react-checkbox-image-filter/",
+  "homepage": "https://gokul3077.github.io/react-checkbox-image-filter",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
