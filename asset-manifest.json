@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-filter-image/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/react-filter-image/static/js/main.aca97ace.chunk.js",
+    "main.js.map": "/react-filter-image/static/js/main.aca97ace.chunk.js.map",
+    "runtime-main.js": "/react-filter-image/static/js/runtime-main.164abb7c.js",
+    "runtime-main.js.map": "/react-filter-image/static/js/runtime-main.164abb7c.js.map",
+    "static/js/2.76b340b6.chunk.js": "/react-filter-image/static/js/2.76b340b6.chunk.js",
+    "static/js/2.76b340b6.chunk.js.map": "/react-filter-image/static/js/2.76b340b6.chunk.js.map",
+    "static/js/3.669f8f94.chunk.js": "/react-filter-image/static/js/3.669f8f94.chunk.js",
+    "static/js/3.669f8f94.chunk.js.map": "/react-filter-image/static/js/3.669f8f94.chunk.js.map",
+    "index.html": "/react-filter-image/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/react-filter-image/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.76b340b6.chunk.js.LICENSE.txt": "/react-filter-image/static/js/2.76b340b6.chunk.js.LICENSE.txt",
+    "static/media/backWindow.ede7de88.jpg": "/react-filter-image/static/media/backWindow.ede7de88.jpg",
+    "static/media/frontWindow.2988bcb3.jpg": "/react-filter-image/static/media/frontWindow.2988bcb3.jpg",
+    "static/media/leftWindow.ef88d2c8.jpg": "/react-filter-image/static/media/leftWindow.ef88d2c8.jpg",
+    "static/media/rightWindow.917363a7.jpg": "/react-filter-image/static/media/rightWindow.917363a7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.164abb7c.js",
+    "static/js/2.76b340b6.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.aca97ace.chunk.js"
+  ]
+}
